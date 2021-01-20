@@ -12,7 +12,7 @@ public interface WhiskyRepository extends JpaRepository<Whisky, Long> {
 
     List<Whisky> findWhiskysByDistillery(Distillery distillery);
 
-    List<Whisky> findWhiskyByAge(int age);
+    List<Whisky> findWhiskiesByDistilleryNameAndAge(String distillery, int age);
 
 //    List<Whisky> findWhiskyByAgeByDistillery(int age, Distillery distillery);
 }

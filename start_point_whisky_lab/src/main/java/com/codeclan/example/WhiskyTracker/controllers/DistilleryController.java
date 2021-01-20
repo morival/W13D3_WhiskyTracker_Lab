@@ -15,7 +15,7 @@ public class DistilleryController {
     @Autowired
     DistilleryRepository distilleryRepository;
 
-//    Glendronach   http://localhost:8080/distilleries?name=Glendronach
+//    http://localhost:8080/distilleries?region=Highland
     @GetMapping(value="/distilleries")
     public ResponseEntity<List<Distillery>> getAllDistilleriesAndFilterByRegion(@RequestParam(name="region", required=false) String region){
         if (region != null){
